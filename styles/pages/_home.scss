@@ -1,3 +1,57 @@
 @use "../globals/mq" as *;
 @use "../globals/variables" as *;
 @use "../parts/common";
+
+.quiz {
+
+    &__container {
+
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__tile {
+        background-color: $cDimGray;
+        width:80%;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    &__question {
+        max-width: 900px;
+        margin: 90px auto;
+
+        & > .text {
+            
+        }
+    }
+
+    &__list {
+        max-width: 900px;
+        margin: 90px auto;
+    }
+
+    &__btn__up {
+        max-width: 300px;
+        display:flex;
+        justify-content: space-between;
+        margin: 30px auto;
+        padding: 15px;
+
+        & > .open {
+            margin: 0 auto;
+            
+        }
+    }
+
+    &__btn__under {
+        max-width: 300px;
+        display:flex;
+        justify-content: space-between;
+        margin: 30px auto;
+        padding: 15px;
+    }
+}

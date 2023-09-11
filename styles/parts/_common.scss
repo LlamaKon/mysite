@@ -1,0 +1,5 @@
+@use "../globals/variables" as *;
+body {
+    background-color: $cSlateGray;
+    color: $cCornSilk;
+}

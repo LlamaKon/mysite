@@ -3,51 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <title>My Site</title>
         <link rel="stylesheet" href="styles/style.css">
-        <script src="../scripts/main.js"></script>
+        <script src="../scripts/main.js" type="module"></script>
     </head>
     <body>
-        <div class="quiz__container">
-            <div class="quiz__title">
-                <h1>title</h1>
-            </div>
-            <div class="quiz__tile">
-                <div class="quiz__info">
+        <!-- nav bar -->
+        <nav id='nav'></nav>
+
+        <div id="root">
+            <!-- Home -->
+            <section id="cover" class='active'>
+                <h1>Welcome!</h1>
+            </section>
+
+            <!-- Todo -->
+            <section id="todo" class='app'>
+                <h1>TODO LIST</h1>
+                <!-- 入力部分-->
+                <div>
+                    <form class="td-search-form">
+                        <label class="td-label">SEARCH</label>
+                        <input type="text" class="td-search-input" placeholder="Search...">
+                    </form>
+                    <form class="td-add-form">
+                        <label class="td-label">ADD</label>
+                        <input type="text" class="td-add-input" placeholder="Add...">
+                    </form>
                 </div>
-                <div class="quiz__question">
-                    <!-- TODO:自動生成-->
-                    <div class="text">gggggggggggggggggg</div>
-                    <div class="text">gggggggggggggggggg</div>
-                    <div class="text">gggggggggggggggggg</div>
-                    <div class="text">ggggggggggggggggggffffffffffffffffffffffffff</div>
-                </div>
-                <div class="quiz__list">
-                    <!-- TODO:自動生成-->
-                    <ul class="select">
-                        <li type="A">AAAAAAAAAAAAAAAAAAAAAA</li>
-                        <li type="A">BBBBBBBBBBBBBBBBBBBBBBBBBBB</li>
-                        <li type="A">CCCCCCCCCCCCCCCCCCCCCCCCCCCCc</li>
-                        <li type="A">DDDDDDDDDDDDDDDDDD</li>
+                <!-- 表示部分-->
+                <div class="todo-container">
+                    <h2>Remains to do</h2>
+                    <ul class="todos">
+    
                     </ul>
                 </div>
-                <div class="quiz__btn__up">
-                    <button class="open">
-                        解答
-                    </button>
+                <div class="done-container">
+                    <h2>Already done</h2>
+                    <ul class="dones">
+                        
+                    </ul>
                 </div>
-                <div class="quiz__btn__under">
-                    <button class="back">
-                        戻る
-                    </button>
-                    <button class="next">
-                        次へ
-                    </button>
-                </div>
+            </section>
 
-                </div>
-            </div>
+            <!-- Typing -->
+            <section id="typing" class='app'></section>
+
+            <!-- Puzzle -->
+            <section id="slide-puzzle" class='app'></section>
+
+            <!-- Memory -->
+            <section id="memory-card" class='app'></section>
+
         </div>
     </body>
 </html>

@@ -2,4 +2,9 @@
 body {
     background-color: $cSlateGray;
     color: $cCornSilk;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 0.3rem;
 }

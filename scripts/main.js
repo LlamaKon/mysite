@@ -1,3 +1,4 @@
+import * as Todo from './libs/todo.js';
 
 const navEl = document.querySelector('#nav');
 const coverEl = document.querySelector('#cover');

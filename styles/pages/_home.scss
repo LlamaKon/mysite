@@ -7,7 +7,7 @@
     width: 100vw;
     height: 5vh;
     min-height:2rem;
-    background-color: #222;
+    background-color: $cBlack;
     position: fixed;
     z-index: 100;
     display: flex;
@@ -57,3 +57,4 @@ section {
     }
 }
 /* <= section */
+
